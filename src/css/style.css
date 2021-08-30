@@ -152,4 +152,34 @@ section .infocongreso .imginfo {
   color: #fff;
 }
 
+.motivos {
+  display: flex;
+  background-color: #1629ff;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.motivos .contenidomot {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  align-items: center;
+  background-color: #fff;
+  width: 40vw;
+}
+.motivos .contenidomot h3 {
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 2rem;
+}
+.motivos .infomotivos {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.motivos .infomotivos p {
+  padding-left: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

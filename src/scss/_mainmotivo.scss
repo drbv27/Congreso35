@@ -1,0 +1,43 @@
+@import "variables";
+    .motivos{
+        display: flex;
+        background-color: $color3;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        
+        .contenidomot{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        align-items: center;
+        background-color: $color0;
+        width: 40vw;
+
+        h3{
+            font-family: $fuente1;
+            padding-bottom: 2rem;
+           
+
+            
+    
+        }
+       
+    }
+   
+     
+        .infomotivos{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+
+           p{
+            padding-left: 2rem;
+
+           } 
+
+        }
+
+}
