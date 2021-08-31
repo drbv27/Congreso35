@@ -24,12 +24,15 @@ nav .menu ul li {
   font-family: "Varela Round", sans-serif;
   font-size: 1.2rem;
   border-left: solid 0.1rem #fff;
-  border-radius: 10px;
+  border-radius: 1px 1px 1px 1px;
   text-align: center;
 }
 nav .menu ul li a {
   text-decoration: none;
   color: white;
+}
+nav .menu ul :nth-child(5) {
+  border-right: solid 0.1rem #fff;
 }
 nav .menu ul li:hover {
   background-color: rgba(0, 7, 244, 0.2);
