@@ -20,19 +20,27 @@ section{
 
             h2{
                 font-size: 3rem;
+                padding-left: 3rem;
                 
             }
             p{
                 padding-top: 2rem;
                 text-align: justify;
                 font-size: 1.2rem;
+                padding-left: 6rem;
+                padding-right: 3rem;
                
 
             }
         }
 
         .imginfo{
-            box-sizing: 80%;
+              img{
+                  padding-top: 2rem;
+                  padding-right: 5rem;
+                  width: 70vh;
+                  height: auto;
+              }
         }
     }
 

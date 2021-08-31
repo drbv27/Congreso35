@@ -22,7 +22,10 @@ nav .menu ul li {
   padding-top: 5vh;
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Varela Round", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  border-left: solid 0.1rem #fff;
+  border-radius: 10px;
+  text-align: center;
 }
 nav .menu ul li a {
   text-decoration: none;
@@ -90,14 +93,20 @@ section .infocongreso .info {
 }
 section .infocongreso .info h2 {
   font-size: 3rem;
+  padding-left: 3rem;
 }
 section .infocongreso .info p {
   padding-top: 2rem;
   text-align: justify;
   font-size: 1.2rem;
+  padding-left: 6rem;
+  padding-right: 3rem;
 }
-section .infocongreso .imginfo {
-  box-sizing: 80%;
+section .infocongreso .imginfo img {
+  padding-top: 2rem;
+  padding-right: 5rem;
+  width: 70vh;
+  height: auto;
 }
 
 .footer {
@@ -156,7 +165,7 @@ section .infocongreso .imginfo {
 
 .motivos {
   display: flex;
-  background-color: #1629ff;
+  background-color: #fff;
   justify-content: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -169,11 +178,13 @@ section .infocongreso .imginfo {
   align-items: center;
   background-color: #fff;
   width: 40vw;
+  box-shadow: 0px 0px 5px 1px black;
 }
 .motivos .contenidomot h3 {
   font-family: "Varela Round", sans-serif;
   padding-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 .motivos .infomotivos {
   display: flex;
@@ -184,6 +195,10 @@ section .infocongreso .imginfo {
 .motivos .infomotivos p {
   padding-left: 2rem;
   font-family: "Varela Round", sans-serif;
+}
+
+.patrocinadores {
+  background-color: #d5d5d5;
 }
 
 /*# sourceMappingURL=style.css.map */

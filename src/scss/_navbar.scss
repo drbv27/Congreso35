@@ -26,7 +26,10 @@ nav{
                 padding-top: 5vh;
                 /* font-family: 'Roboto', sans-serif; */
                 font-family: 'Varela Round', sans-serif;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
+                border-left: solid 0.1rem $color0 ;
+                border-radius: 10px;
+                text-align: center;
                 
                 a{
                     text-decoration: none;
