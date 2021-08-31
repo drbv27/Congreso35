@@ -143,6 +143,9 @@ section .infocongreso .imginfo {
   font-size: 1.4rem;
   padding-top: 0.7rem;
 }
+.footer .redes a :hover {
+  color: #71fff4;
+}
 
 .copy {
   background-color: #0080ff;
@@ -171,6 +174,7 @@ section .infocongreso .imginfo {
 .motivos .contenidomot h3 {
   font-family: "Varela Round", sans-serif;
   padding-bottom: 2rem;
+  font-size: 1.5rem;
 }
 .motivos .infomotivos {
   display: flex;
@@ -180,6 +184,7 @@ section .infocongreso .imginfo {
 }
 .motivos .infomotivos p {
   padding-left: 2rem;
+  font-family: "Varela Round", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
