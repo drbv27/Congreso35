@@ -204,4 +204,50 @@ section .infocongreso .imginfo img {
   background-color: #d5d5d5;
 }
 
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 14vh;
+}
+.slider ul {
+  padding: 0;
+  display: flex;
+  width: 300%;
+  animation: change 9s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out 0.2s;
+}
+.slider ul li {
+  width: 100%;
+  list-style: none;
+}
+.slider ul li img {
+  width: 100%;
+}
+
+@keyframes change {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+.control {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
