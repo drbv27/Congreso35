@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #233f4b;
   border-bottom: solid 4px #71fff4;
   top: 0;
@@ -12,37 +12,68 @@ nav .logo img {
   height: 14vh;
   width: auto;
   padding-top: 1vh;
+  padding-left: 3rem;
 }
-nav .menu ul {
+
+#menup {
   display: flex;
 }
-nav .menu ul li {
+#menup .menu {
+  padding-right: 2rem;
+}
+#menup .menu ul {
+  display: flex;
+  padding-top: 1rem;
+}
+#menup .menu ul li {
   list-style-type: none;
   padding: 2vh;
-  padding-top: 5vh;
+  padding-top: 4vh;
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Varela Round", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-left: solid 0.1rem #fff;
   border-radius: 1px 1px 1px 1px;
   text-align: center;
 }
-nav .menu ul li a {
+#menup .menu ul li a {
   text-decoration: none;
   color: white;
 }
-nav .menu ul :nth-child(5) {
+#menup .menu ul :nth-child(5) {
   border-right: solid 0.1rem #fff;
 }
-nav .menu ul li:hover {
+#menup .menu ul li:hover {
   background-color: rgba(0, 7, 244, 0.2);
   border-bottom: solid 3px #71fff4;
   border-radius: 8px;
   transition: ease-in-out 0.4s;
 }
-nav .menu ul li:hover a {
+#menup .menu ul li:hover a {
   color: #71fff4;
   transition: ease-in-out 0.4s;
+}
+#menup #menu {
+  display: flex;
+  list-style-type: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.3rem;
+  padding: 2rem;
+  text-align: center;
+}
+#menup #menu #ingreso a {
+  text-decoration: none;
+  color: #fff;
+  border: solid 2px #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+#menup #menu #ingreso :hover {
+  background-color: rgba(0, 7, 244, 0.2);
+  border-bottom: solid 3px #71fff4;
+  border-radius: 8px;
+  transition: ease-in-out 0.4s;
+  color: #71fff4;
 }
 
 *,

@@ -1,7 +1,7 @@
 @import "variables";
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: $color10;
     border-bottom: solid 4px $color1;
     top: 0;
@@ -14,45 +14,97 @@ nav{
             height: 14vh;
             width: auto;
             padding-top: 1vh;
+            padding-left: 3rem;
         }
     }
-    .menu{
-        ul{
-            display: flex;
+    
+      
+    }
 
-            li{
-                list-style-type: none;
-                padding: 2vh;
-                padding-top: 5vh;
-                /* font-family: 'Roboto', sans-serif; */
-                font-family: 'Varela Round', sans-serif;
-                font-size: 1.2rem;
-                border-left: solid 0.1rem $color0;
-                border-radius: 1px 1px 1px 1px;
-                text-align: center;
+    #menup{
+        display: flex;
+        .menu{
+            padding-right: 2rem;
+            ul{
+                display: flex;
+                padding-top: 1rem;
+    
+                li{
+                    list-style-type: none;
+                    padding: 2vh;
+                    padding-top: 4vh;
+                    /* font-family: 'Roboto', sans-serif; */
+                    font-family: 'Varela Round', sans-serif;
+                    font-size: 1rem;
+                    border-left: solid 0.1rem $color0;
+                    border-radius: 1px 1px 1px 1px;
+                    text-align: center;
+                   
+                    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        
+                        
+                    }
                 
+    
+                }
+    
+    
+                :nth-child(5){
+                    border-right: solid 0.1rem $color0;
+                }
+                li:hover{
+                  background-color: $color4o;
+                  border-bottom: solid 3px $color1;
+                  border-radius: 8px;
+                  transition: ease-in-out 0.4s;
+                  a{
+                    color: $color1;
+                    transition: ease-in-out 0.4s;
+    
+                 
+                  }
+                 
+    
+                }
+              
+               
+            }
+
+         }   
+        #menu{
+            display: flex;
+            list-style-type: none;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.3rem;
+            padding: 2rem;
+            text-align: center;
+
+            #ingreso{
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: $color0;
+                    border: solid 2px $color0;
+                    padding: 0.7rem;
+                    border-radius: 10px;
                 }
+                :hover{
+                    background-color: $color4o;
+                    border-bottom: solid 3px $color1;
+                    border-radius: 8px;
+                    transition: ease-in-out 0.4s;
+                    color: $color1;
+                  
+                   
+                }
+
+            }
+
+           
+            
             
 
-            }
-            :nth-child(5){
-                border-right: solid 0.1rem $color0;
-            }
-            li:hover{
-              background-color: $color4o;
-              border-bottom: solid 3px $color1;
-              border-radius: 8px;
-              transition: ease-in-out 0.4s;
-              a{
-                color: $color1;
-                transition: ease-in-out 0.4s;
-              }
-              
-
-            }
-        }
     }
 }
