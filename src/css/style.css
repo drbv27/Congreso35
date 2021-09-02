@@ -220,6 +220,9 @@ section .infocongreso .imginfo img {
   font-size: 2.5rem;
   text-align: center;
 }
+.motivos .contenidomot :nth-child(5) .icono {
+  font-size: 2rem;
+}
 .motivos .infomotivos {
   display: flex;
   align-content: center;
@@ -230,9 +233,23 @@ section .infocongreso .imginfo img {
   padding-left: 2rem;
   font-family: "Varela Round", sans-serif;
 }
+.motivos .infomotivos .icono {
+  font-size: 2.5rem;
+  color: #233f4b;
+  padding: 0.8rem;
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 10px;
+}
 
 .patrocinadores {
   background-color: #d5d5d5;
+}
+.patrocinadores .contenpatro {
+  padding: 10px;
+}
+.patrocinadores .contenpatro img {
+  width: 100%;
+  height: auto;
 }
 
 .slider {
@@ -278,7 +295,19 @@ section .infocongreso .imginfo img {
   }
 }
 .control {
+  display: block;
+  background-color: #233f4b;
+}
+.control ul {
   display: flex;
+  justify-content: center;
+}
+.control ul li {
+  padding: 0.5rem;
+  list-style-type: none;
+}
+.control ul li i {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
