@@ -3,11 +3,12 @@
     margin: auto;
     overflow: hidden;
     padding-top: 14vh;
+    background-color: $color4o;
     ul {
       padding: 0;
       display: flex;
-      width: 300%;
-      animation: change 9s infinite;
+      width: 400%;
+      animation: change 12s infinite;
       animation-direction: alternate;
       animation-timing-function: ease-in-out 0.2s;
       li {
@@ -23,20 +24,26 @@
     0% {
       margin-left: 0;
     }
-    30% {
+    20% {
       margin-left: 0;
     }
-    35% {
+    25% {
       margin-left: -100%;
     }
-    65% {
+    45% {
       margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
     }
     70%{
         margin-left: -200%;
     }
+    75%{
+      margin-left: -300%;
+    }
     100%{
-        margin-left: -200%;
+      margin-left: -300%;
     }
 }
 .control{
@@ -61,4 +68,11 @@
 
   }
     
+}
+
+@media screen and (max-width: 1024px) {
+  .slider{
+    visibility: hidden;
+  }
+  
 }

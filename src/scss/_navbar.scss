@@ -3,7 +3,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: $color10;
-    border-bottom: solid 4px $color1;
+    border-bottom: solid 4px $color2;
     top: 0;
     z-index: 100;
     position: fixed;
@@ -57,11 +57,11 @@ nav{
                 }
                 li:hover{
                   background-color: $color4o;
-                  border-bottom: solid 3px $color1;
+                  border-bottom: solid 3px $color2;
                   border-radius: 8px;
                   transition: ease-in-out 0.4s;
                   a{
-                    color: $color1;
+                    color: $color0;
                     transition: ease-in-out 0.4s;
     
                  
@@ -92,10 +92,10 @@ nav{
                 }
                 :hover{
                     background-color: $color4o;
-                    border-bottom: solid 3px $color1;
+                    border-bottom: solid 3px $color2;
                     border-radius: 8px;
                     transition: ease-in-out 0.4s;
-                    color: $color1;
+                    color: $color0;
                   
                    
                 }
@@ -107,4 +107,35 @@ nav{
             
 
     }
+}
+
+@media screen and (max-width: 1024px) {
+    nav{
+        flex-direction: column;
+        .logo{
+            text-align: center;
+        }
+
+        #menup{
+        align-items: center;
+            flex-direction: column-reverse;
+
+            .menu{
+                ul{
+                    flex-direction: column;
+                    align-items: center;
+
+                    :nth-child(5){
+                        border-right: none;
+                    }
+                    
+                    li{
+                        border: none;
+                        padding:0.4rem;
+                    }
+                }
+            }
+        }
+    }
+    
 }

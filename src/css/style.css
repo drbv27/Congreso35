@@ -1,8 +1,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #233f4b;
-  border-bottom: solid 4px #71fff4;
+  background-color: #00426c;
+  border-bottom: solid 4px #0080ff;
   top: 0;
   z-index: 100;
   position: fixed;
@@ -45,12 +45,12 @@ nav .logo img {
 }
 #menup .menu ul li:hover {
   background-color: rgba(0, 7, 244, 0.2);
-  border-bottom: solid 3px #71fff4;
+  border-bottom: solid 3px #0080ff;
   border-radius: 8px;
   transition: ease-in-out 0.4s;
 }
 #menup .menu ul li:hover a {
-  color: #71fff4;
+  color: #fff;
   transition: ease-in-out 0.4s;
 }
 #menup #menu {
@@ -70,12 +70,35 @@ nav .logo img {
 }
 #menup #menu #ingreso :hover {
   background-color: rgba(0, 7, 244, 0.2);
-  border-bottom: solid 3px #71fff4;
+  border-bottom: solid 3px #0080ff;
   border-radius: 8px;
   transition: ease-in-out 0.4s;
-  color: #71fff4;
+  color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .logo {
+    text-align: center;
+  }
+  nav #menup {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  nav #menup .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav #menup .menu ul :nth-child(5) {
+    border-right: none;
+  }
+  nav #menup .menu ul li {
+    border: none;
+    padding: 0.4rem;
+  }
+}
 *,
 *::after,
 *::before {
@@ -93,7 +116,7 @@ header .impal img {
 }
 header .botonh {
   text-align: center;
-  background-color: #233f4b;
+  background-color: #00426c;
   padding: 5vh;
 }
 header .botonh :hover {
@@ -104,7 +127,7 @@ header .botonh :hover {
 header .botonh input {
   font-family: "Varela Round", sans-serif;
   font-size: 1.3rem;
-  background-color: #1629ff;
+  background-color: #003f67;
   color: white;
   padding: 1rem 5rem;
   border-radius: 30px;
@@ -143,9 +166,24 @@ section .infocongreso .imginfo img {
   height: auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .imgorganiza {
+    flex-direction: column;
+  }
+
+  .infocongreso {
+    flex-direction: column;
+  }
+  .infocongreso .imginfo {
+    width: 0;
+    height: 0;
+    padding-top: 0;
+    padding-right: 0;
+  }
+}
 .footer {
   display: flex;
-  background-color: #233f4b;
+  background-color: #00426c;
   padding: 0.5rem;
   padding-left: 1rem;
 }
@@ -191,10 +229,11 @@ section .infocongreso .imginfo img {
 
 .copy {
   background-color: #0080ff;
+  font-size: 0.8rem;
   font-family: "Varela Round", sans-serif;
   text-align: center;
-  padding: 1.5rem;
-  color: #fff;
+  padding: 0.3rem;
+  color: lightgray;
 }
 
 section h3 {
@@ -222,7 +261,7 @@ section .contenidomot .parrafo {
 }
 section .contenidomot .parrafo .icono {
   font-size: 2.5rem;
-  color: #233f4b;
+  color: #00426c;
   padding: 0.8rem;
   box-shadow: 0px 0px 5px 1px black;
   border-radius: 10px;
@@ -232,71 +271,11 @@ section .contenidomot .parrafo p {
   font-family: "Varela Round", sans-serif;
 }
 
-/* .motivos{
-        display: flex;
-        background-color: $color0;
-        justify-content: center;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-
-        .contenidomot{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        border-radius: 30px;
-        align-items: center;
-        background-color: $color0;
-        width: 40vw;
-        box-shadow: 0px 0px 5px 1px black;
-
-        h3{
-            font-family: $fuente1;
-            padding-bottom: 2rem;
-            font-size: 2.5rem;
-            text-align: center;
-
-
-
-
-        }
-       :nth-child(5){
-           .icono{
-               font-size: 2rem;
-
-           }
-       }
-    }
-
-
-        .infomotivos{
-            display: flex;
-            align-content: center;
-            align-items: center;
-            padding-bottom: 2rem;
-
-           p{
-            padding-left: 2rem;
-            font-family: $fuente1;
-
-           } 
-
-           .icono{
-               font-size: 2.5rem;
-
-               color: $color10;
-               padding: 0.8rem;
-               box-shadow: 0px 0px 5px 1px black;
-               border-radius: 10px;
-
-
-
-           }
-
-
-        }
-
+@media screen and (max-width: 1024px) {
+  .contenidomot {
+    flex-direction: column;
+  }
 }
- */
 .patrocinadores {
   background-color: #d5d5d5;
 }
@@ -313,12 +292,13 @@ section .contenidomot .parrafo p {
   margin: auto;
   overflow: hidden;
   padding-top: 14vh;
+  background-color: rgba(0, 7, 244, 0.2);
 }
 .slider ul {
   padding: 0;
   display: flex;
-  width: 300%;
-  animation: change 9s infinite;
+  width: 400%;
+  animation: change 12s infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out 0.2s;
 }
@@ -334,25 +314,31 @@ section .contenidomot .parrafo p {
   0% {
     margin-left: 0;
   }
-  30% {
+  20% {
     margin-left: 0;
   }
-  35% {
+  25% {
     margin-left: -100%;
   }
-  65% {
+  45% {
     margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
   }
   70% {
     margin-left: -200%;
   }
+  75% {
+    margin-left: -300%;
+  }
   100% {
-    margin-left: -200%;
+    margin-left: -300%;
   }
 }
 .control {
   display: block;
-  background-color: #233f4b;
+  background-color: #00426c;
 }
 .control ul {
   display: flex;
@@ -364,6 +350,80 @@ section .contenidomot .parrafo p {
 }
 .control ul li i {
   color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    visibility: hidden;
+  }
+}
+.tarifas {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-family: "Varela Round", sans-serif;
+  background-color: #0080ff;
+  color: white;
+  padding-top: 3rem;
+}
+.tarifas :nth-child(1) {
+  grid-column: 4/11;
+  grid-row: 1/4;
+  font-size: 4.1rem;
+  font-weight: bold;
+  transform: scaleY(1.2);
+}
+.tarifas :nth-child(2) {
+  grid-column: 11/15;
+  grid-row: 1/2;
+  font-size: 1.6rem;
+}
+.tarifas :nth-child(3) {
+  grid-column: 11/15;
+  grid-row: 2/4;
+  font-size: 2.6rem;
+}
+
+#tarifas {
+  background-color: #0080ff;
+  padding: 4rem;
+}
+#tarifas table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+}
+#tarifas table #th1 {
+  border-radius: 35px 0px 0px 0px;
+}
+#tarifas table #th2 {
+  border-radius: 0px 35px 0px 0px;
+}
+#tarifas table :nth-child(3) {
+  background-color: lightgray;
+}
+#tarifas table tr {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #fff;
+}
+#tarifas table td {
+  text-align: center;
+  border-collapse: collapse;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table th {
+  border-collapse: collapse;
+  background-color: #1629ff;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

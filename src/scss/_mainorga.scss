@@ -45,6 +45,25 @@ section{
     }
 
 }
+@media screen and (max-width:1024px) {
+    .imgorganiza{
+        flex-direction: column;
+    }
+
+    .infocongreso{
+        flex-direction: column;
+
+        .imginfo{
+            
+            width: 0;
+            height: 0;
+            padding-top: 0;
+            padding-right: 0;
+        }
+         
+    }
+}
+
 
 
    
