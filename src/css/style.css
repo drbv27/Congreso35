@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -99,13 +106,6 @@ nav .logo img {
     padding: 0.4rem;
   }
 }
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-}
-
 header .impal {
   text-align: center;
   padding-top: 14vh;
