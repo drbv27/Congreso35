@@ -6,6 +6,75 @@
   box-sizing: border-box;
 }
 
+section .imgorganiza {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 7, 244, 0.2);
+}
+section .imgorganiza img {
+  box-shadow: 0px 0px 30px black;
+}
+section .infocongreso {
+  display: flex;
+}
+section .infocongreso .info {
+  font-family: "Varela Round", sans-serif;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: 20%;
+}
+section .infocongreso .info h2 {
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+section .infocongreso .info p {
+  padding-top: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+section .infocongreso .imginfo img {
+  padding-top: 2rem;
+  padding-right: 5rem;
+  width: 70vh;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .organizador {
+    padding-top: 1rem;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .organizador .infocongreso {
+    flex-direction: column;
+    align-items: center;
+  }
+  .organizador .infocongreso .info {
+    padding: 0;
+  }
+  .organizador .infocongreso .info p {
+    padding: 0.2rem;
+  }
+  .organizador .infocongreso .imginfo img {
+    padding-left: 0rem;
+    width: 80vw;
+  }
+
+  .imgorganiza {
+    margin-top: 8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgorganiza img {
+    padding: 20px;
+    box-shadow: 0px 0px 30px black;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -172,7 +241,11 @@ section .imgorganiza {
   display: flex;
   justify-content: space-around;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: rgba(0, 7, 244, 0.2);
+}
+section .imgorganiza img {
+  box-shadow: 0px 0px 30px black;
 }
 section .infocongreso {
   display: flex;
@@ -203,7 +276,7 @@ section .infocongreso .imginfo img {
 
 @media screen and (max-width: 1024px) {
   .organizador {
-    padding-top: 10rem;
+    padding-top: 1rem;
     justify-items: center;
     width: 100%;
     height: auto;
@@ -220,13 +293,17 @@ section .infocongreso .imginfo img {
   }
   .organizador .infocongreso .imginfo img {
     padding-left: 0rem;
-    width: 50vw;
+    width: 80vw;
   }
 
   .imgorganiza {
     margin-top: 8rem;
     flex-direction: column;
     align-items: center;
+  }
+  .imgorganiza img {
+    padding: 20px;
+    box-shadow: 0px 0px 30px black;
   }
 }
 .footer {
@@ -358,6 +435,9 @@ section .contenidomot .parrafo p {
   }
   main .contenidomot {
     flex-direction: column;
+  }
+  main .contenidomot .contparrafo {
+    padding: 0;
   }
 }
 .patrocinadores {

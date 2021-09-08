@@ -4,7 +4,13 @@ section{
         display: flex;
         justify-content:space-around ;
         padding-top: 1rem;
+        padding-bottom: 1rem;
         background-color: $color4o;
+
+        img{
+            box-shadow: 0px 0px 30px black;
+        }
+
 
     }
 
@@ -48,7 +54,7 @@ section{
 @media screen and (max-width:1024px) {
     .organizador{
         
-        padding-top: 10rem;
+        padding-top: 1rem;
         justify-items: center ;
         width: 100%;
         height: auto;
@@ -69,7 +75,7 @@ section{
                 
                 img{
                     padding-left: 0rem;
-                    width: 50vw;
+                    width: 80vw;
                     
 
                 }
@@ -85,6 +91,12 @@ section{
         margin-top: 8rem;        
         flex-direction: column;
         align-items: center;
+        
+        img{
+            padding: 20px;
+            box-shadow: 0px 0px 30px black;
+           
+        }
         
     }
 
