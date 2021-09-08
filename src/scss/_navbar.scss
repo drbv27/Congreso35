@@ -8,7 +8,7 @@ nav{
     z-index: 100;
     position: fixed;
     width: 100%;
-    
+   
     .logo{
         img{
             height: 14vh;
@@ -25,6 +25,12 @@ nav{
         display: flex;
         .menu{
             padding-right: 2rem;
+            input{
+                display: none;
+            }
+            label{
+                display: none;
+            }
             ul{
                 display: flex;
                 padding-top: 1rem;
@@ -112,7 +118,8 @@ nav{
 @media screen and (max-width: 1024px) {
     nav{
         flex-direction: column;
-    
+
+           
         
         .logo{
             padding-top: 5rem;
@@ -126,10 +133,50 @@ nav{
 
         #menup{
         align-items: center;
-            flex-direction: column-reverse;
+        flex-direction: column-reverse;
+            
+        :nth-child(2){
+            #menu{
+                #ingreso{
+                    margin-right: 2.3rem;
+                }
+            }
+        }
 
             .menu{
+
+                
+                input:checked ~ ul{
+                    display: block;
+ 
+                    
+                    
+                }
+                label{
+                    box-sizing: border-box;
+                    display: block;
+                    color: $color0;
+                    border: solid 2px $color0;
+                    border-radius: 10px;
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    user-select: none;
+                    
+                    
+                    
+
+                }
+                input:checked ~ label{
+                    background-color: gray;
+                    margin: 0;
+                    margin-left: 3rem;
+                }
+                
                 ul{
+                    display: none;
                     flex-direction: column;
                     align-items: center;
 
@@ -143,6 +190,9 @@ nav{
                     }
                 }
             }
+
+
+
         }
     }
     
