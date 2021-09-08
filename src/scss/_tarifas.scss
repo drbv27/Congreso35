@@ -32,9 +32,12 @@
 #tarifas{
     background-color: $color2;
     padding: 4rem;
-    
-    
 
+    
+        #tablares{
+            display: none;
+
+        }
 
     table{
         text-align: center;
@@ -68,7 +71,6 @@
         
         td{
             text-align: center;
-            
             border-collapse: collapse;
             padding-left: 5rem;
             padding-right: 5rem;
@@ -90,3 +92,60 @@
         }
     }
 }
+
+@media screen and (max-width:1024px) {
+
+    .tarifas{
+        :nth-child(1){
+            grid-column: 4/11;
+            grid-row: 1/4;
+            font-size: 2.1rem;
+            font-weight: bold;
+            align-content: center;
+            
+        }
+        :nth-child(2){
+            grid-column: 4/11;
+            grid-row: 3/2;
+            font-size: 1rem;
+            padding-top: 0.4rem;
+        }
+        :nth-child(3){
+            grid-column: 4/11;
+            grid-row: 3/4;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+
+    #tarifas{
+        #table{
+            :nth-child(3){
+                background-color: lightgray;
+            }
+            :nth-child(5){
+                background-color: lightgray;
+            }
+            :nth-child(7){
+                background-color: lightgray;
+            }
+            #tableful{
+                display: none;
+
+            }
+           
+            }
+
+
+        #tablares{
+            display: inherit;
+            font-size: 1rem;
+        
+        }
+    }
+  
+   
+}
+
+
+
