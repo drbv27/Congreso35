@@ -61,18 +61,20 @@ section .infocongreso .imginfo img {
     padding: 0.2rem;
   }
   .organizador .infocongreso .imginfo img {
-    padding-left: 0rem;
-    width: 80vw;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
   }
 
   .imgorganiza {
-    margin-top: 8rem;
+    margin-top: 12rem;
     flex-direction: column;
     align-items: center;
   }
   .imgorganiza img {
-    padding: 20px;
-    box-shadow: 0px 0px 30px black;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
   }
 }
 nav {
@@ -114,7 +116,7 @@ nav .logo img {
   padding-top: 4vh;
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Varela Round", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-left: solid 0.1rem #fff;
   border-radius: 1px 1px 1px 1px;
   text-align: center;
@@ -164,14 +166,18 @@ nav .logo img {
     flex-direction: column;
   }
   nav .logo {
-    padding-top: 5rem;
     text-align: center;
-    align-content: center;
-    display: none;
+    padding: 1rem 4rem 1rem 2rem;
+  }
+  nav .logo img {
+    width: 40vh;
+    height: auto;
+    padding: 0;
   }
   nav #menup {
     align-items: center;
     flex-direction: column-reverse;
+    padding-bottom: 0.5rem;
   }
   nav #menup :nth-child(2) #menu #ingreso {
     margin-right: 2.3rem;
@@ -210,6 +216,14 @@ nav .logo img {
     padding: 0.4rem;
   }
 }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header .impal {
   text-align: center;
   padding-top: 14vh;
@@ -292,18 +306,20 @@ section .infocongreso .imginfo img {
     padding: 0.2rem;
   }
   .organizador .infocongreso .imginfo img {
-    padding-left: 0rem;
-    width: 80vw;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
   }
 
   .imgorganiza {
-    margin-top: 8rem;
+    margin-top: 12rem;
     flex-direction: column;
     align-items: center;
   }
   .imgorganiza img {
-    padding: 20px;
-    box-shadow: 0px 0px 30px black;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
   }
 }
 .footer {
@@ -376,6 +392,9 @@ section .infocongreso .imginfo img {
     justify-content: space-between;
     align-items: center;
   }
+  footer .footer :nth-child(3) {
+    width: 100%;
+  }
   footer .footer :nth-child(3) :nth-child(3) {
     display: none;
   }
@@ -384,15 +403,34 @@ section .infocongreso .imginfo img {
     font-weight: bold;
     font-size: 1.5rem;
   }
+  footer .footer :nth-child(2) {
+    width: 100%;
+  }
   footer .footer :nth-child(2) :nth-child(3) {
     display: none;
   }
   footer .footer :nth-child(2) :nth-child(4) {
+    flex-direction: row;
     display: inherit;
     font-weight: bold;
     font-size: 1.5rem;
   }
+  footer .footer :nth-child(4) {
+    flex-direction: row;
+    width: 100%;
+  }
+  footer .footer :nth-child(4) h3 {
+    display: none;
+  }
 }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 section h3 {
   font-family: "Varela Round", sans-serif;
   padding-top: 3rem;
@@ -427,6 +465,9 @@ section .contenidomot .parrafo p {
   padding-left: 1rem;
   font-family: "Varela Round", sans-serif;
 }
+section .contenidomot .parrafo p .has {
+  font-size: 0.8rem;
+}
 
 @media screen and (max-width: 1024px) {
   main {
@@ -438,6 +479,7 @@ section .contenidomot .parrafo p {
   }
   main .contenidomot .contparrafo {
     padding: 0;
+    text-align: justify;
   }
 }
 .patrocinadores {
@@ -614,6 +656,9 @@ section .contenidomot .parrafo p {
     text-align: center;
   }
 
+  #tarifas {
+    padding: 0;
+  }
   #tarifas #table :nth-child(3) {
     background-color: lightgray;
   }
@@ -629,6 +674,74 @@ section .contenidomot .parrafo p {
   #tarifas #tablares {
     display: inherit;
     font-size: 1rem;
+  }
+}
+#inscripcion {
+  position: sticky;
+  top: 5rem;
+}
+#inscripcion .inscripcion {
+  display: flex;
+  padding: 3rem;
+  justify-content: space-evenly;
+  background-color: #fff;
+  position: sticky;
+}
+#inscripcion .inscripcion p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  align-self: center;
+}
+#inscripcion .inscripcion a {
+  text-decoration: none;
+  align-self: center;
+  color: black;
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+  border: solid 0.3rem;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  transition: ease-in-out 0.5s;
+}
+#inscripcion .inscripcion a i {
+  padding-right: 10px;
+}
+#inscripcion .inscripcion a:hover {
+  background-color: #003f67;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  #inscripcion {
+    position: sticky;
+    top: 14rem;
+    width: 100vw;
+    height: auto;
+  }
+  #inscripcion .inscripcion {
+    padding: 5rem 1rem 1rem 1rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #inscripcion .inscripcion p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #inscripcion .inscripcion a {
+    text-decoration: none;
+    background-color: #003f67;
+    align-self: center;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Varela Round", sans-serif;
+    border: solid 0.3rem #003f67;
+    border-radius: 2rem;
+  }
+  #inscripcion .inscripcion a i {
+    font-size: 2rem;
+    align-items: center;
+    display: none;
   }
 }
 

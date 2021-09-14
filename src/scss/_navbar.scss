@@ -42,7 +42,7 @@ nav{
                     padding-top: 4vh;
                     /* font-family: 'Roboto', sans-serif; */
                     font-family: 'Varela Round', sans-serif;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     border-left: solid 0.1rem $color0;
                     border-radius: 1px 1px 1px 1px;
                     text-align: center;
@@ -119,11 +119,14 @@ nav{
            
         
         .logo{
-            padding-top: 5rem;
-            text-align: center;
-            align-content: center;
-            display: none;
-            
+           text-align: center;
+           padding: 1rem 4rem 1rem 2rem;
+          img{
+              width: 40vh;
+              height: auto;
+              padding: 0;
+          }
+           
           
             
         }
@@ -131,6 +134,7 @@ nav{
         #menup{
         align-items: center;
         flex-direction: column-reverse;
+        padding-bottom: 0.5rem;
             
         :nth-child(2){
             #menu{
@@ -161,6 +165,7 @@ nav{
                     height: 50px;
                     text-align: center;
                     user-select: none;
+                   
                     
                     
                     
@@ -170,6 +175,7 @@ nav{
                     background-color: gray;
                     margin: 0;
                     margin-left: 3rem;
+                    
                 }
                 
                 ul{
@@ -187,8 +193,6 @@ nav{
                     }
                 }
             }
-
-
 
         }
     }

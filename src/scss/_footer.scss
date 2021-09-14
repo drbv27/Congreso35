@@ -86,12 +86,14 @@
     footer{
         
         width: 100%;
+
         .footer{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
 
             :nth-child(3){
+                width: 100%;
                 
                 :nth-child(3){
                     display: none;
@@ -103,18 +105,31 @@
                 }
             }
             :nth-child(2){
+                width: 100%;
                 :nth-child(3){
                     display: none;
                 }
                 
                 :nth-child(4){
+                    flex-direction: row;
                     display: inherit;
                     font-weight: bold;
                     font-size: 1.5rem;
                 }
             }
+            :nth-child(4){
+                flex-direction: row;
+                width: 100%;
+                h3{
+                    display: none;
+                }
+            }
+
+         
             
         }
+        
+       
 
     }
    
