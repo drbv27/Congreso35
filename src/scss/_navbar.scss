@@ -116,7 +116,6 @@ nav{
     nav{
         flex-direction: column;
 
-           
         
         .logo{
            text-align: center;
@@ -132,14 +131,19 @@ nav{
         }
 
         #menup{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-top: 1rem;
+        margin-left: 1rem;
+        padding-bottom: 0;
         align-items: center;
-        flex-direction: column-reverse;
-        padding-bottom: 0.5rem;
-            
+               
         :nth-child(2){
             #menu{
+              align-items: flex-end;
+                padding-bottom: 1rem;
                 #ingreso{
-                    margin-right: 2.3rem;
+                    padding-bottom: 0.5rem;
                 }
             }
         }
@@ -148,6 +152,7 @@ nav{
 
                 
                 input:checked ~ ul{
+                    
                     display: block;
  
                     

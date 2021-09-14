@@ -175,12 +175,19 @@ nav .logo img {
     padding: 0;
   }
   nav #menup {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 0;
     align-items: center;
-    flex-direction: column-reverse;
-    padding-bottom: 0.5rem;
+  }
+  nav #menup :nth-child(2) #menu {
+    align-items: flex-end;
+    padding-bottom: 1rem;
   }
   nav #menup :nth-child(2) #menu #ingreso {
-    margin-right: 2.3rem;
+    padding-bottom: 0.5rem;
   }
   nav #menup .menu input:checked ~ ul {
     display: block;
@@ -674,6 +681,7 @@ section .contenidomot .parrafo p .has {
   #tarifas #tablares {
     display: inherit;
     font-size: 1rem;
+    padding-left: 0.7rem;
   }
 }
 #inscripcion {
@@ -714,7 +722,7 @@ section .contenidomot .parrafo p .has {
 @media screen and (max-width: 1024px) {
   #inscripcion {
     position: sticky;
-    top: 14rem;
+    top: 10rem;
     width: 100vw;
     height: auto;
   }
