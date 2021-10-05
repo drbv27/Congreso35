@@ -729,6 +729,7 @@ section .contenidomot .parrafo p .has {
 #inscripcion {
   position: sticky;
   top: 5rem;
+  z-index: 1000;
 }
 #inscripcion .inscripcion {
   display: flex;
