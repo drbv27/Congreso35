@@ -89,9 +89,14 @@
 
             
         }
-        #bancolombia{
+        .bancolombia{
             font-size: 1.5rem;
             background-color: rgba(211, 211, 211, 0.521);
+            padding: 0.2rem;
+
+            a{
+                text-decoration: none;
+            }
             
         }
         
@@ -125,12 +130,7 @@
             :nth-child(7){
                 background-color: lightgray;
             }
-            :nth-child(9){
-                background-color: lightgray;
-            }
-            :nth-child(11){
-                background-color: lightgray;
-            }
+          
             #tableful{
                 display: none;
 
@@ -143,6 +143,10 @@
             display: inherit;
             font-size: 1rem;
             padding-left: 0.7rem;
+
+            .bancolombia{
+                background-color: lightgrey;
+            }
            
         
         }
