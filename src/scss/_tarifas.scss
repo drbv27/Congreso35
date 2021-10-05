@@ -36,8 +36,6 @@
     
         #tablares{
             display: none;
-
-
         }
 
     table{
@@ -94,7 +92,26 @@
         #bancolombia{
             font-size: 1.5rem;
             background-color: rgba(211, 211, 211, 0.521);
-            
+            text-align: center;
+
+            a{
+                margin-top: 2rem;
+                text-decoration: none;
+                font-size: 1rem;
+                border: solid 2px $azul1;
+                padding: 0.5rem;
+                border-radius: 15px;
+                background-color: $azul1;
+                color: $color0;
+                
+                
+               
+            }
+            a:hover{
+                background-color: $color0;
+                color: $azul1;
+                transition: ease-in-out 0.5s;
+            }
         }
         
     }
@@ -165,7 +182,26 @@
         }
     }
   
-   
+   #btnbancolombia{
+    a{
+        margin-top: 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        border: solid 2px $azul1;
+        padding: 0.5rem;
+        border-radius: 15px;
+        background-color: $azul1;
+        color: $color0;
+        
+        
+       
+    }
+    a:hover{
+        background-color: $color0;
+        color: $azul1;
+        transition: ease-in-out 0.5s;
+    }
+   }
 }
 
 

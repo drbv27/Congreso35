@@ -641,6 +641,22 @@ section .contenidomot .parrafo p .has {
 #tarifas table #bancolombia {
   font-size: 1.5rem;
   background-color: rgba(211, 211, 211, 0.521);
+  text-align: center;
+}
+#tarifas table #bancolombia a {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border: solid 2px #00426c;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: #00426c;
+  color: #fff;
+}
+#tarifas table #bancolombia a:hover {
+  background-color: #fff;
+  color: #00426c;
+  transition: ease-in-out 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -692,6 +708,22 @@ section .contenidomot .parrafo p .has {
     display: inherit;
     font-size: 1rem;
     padding-left: 0.7rem;
+  }
+
+  #btnbancolombia a {
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border: solid 2px #00426c;
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: #00426c;
+    color: #fff;
+  }
+  #btnbancolombia a:hover {
+    background-color: #fff;
+    color: #00426c;
+    transition: ease-in-out 0.5s;
   }
 }
 #inscripcion {
@@ -760,6 +792,114 @@ section .contenidomot .parrafo p .has {
     font-size: 2rem;
     align-items: center;
     display: none;
+  }
+}
+#pagosbancolombia {
+  margin-top: 9rem;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+#pagosbancolombia p {
+  margin-bottom: 2rem;
+}
+#pagosbancolombia a {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border: solid 2px #00426c;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: #00426c;
+  color: #fff;
+}
+#pagosbancolombia a:hover {
+  background-color: #fff;
+  color: #00426c;
+  transition: ease-in-out 0.5s;
+}
+
+#tarifas {
+  background-color: #0080ff;
+  padding: 4rem;
+}
+#tarifas #tablares {
+  display: none;
+}
+#tarifas table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+}
+#tarifas table #th1b {
+  border-radius: 35px 35px 0px 0px;
+}
+#tarifas table tr {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #fff;
+}
+#tarifas table td {
+  text-align: center;
+  border-collapse: collapse;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table th {
+  border-collapse: collapse;
+  background-color: #1629ff;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tarifas table #bancolombia {
+  font-size: 1.5rem;
+  background-color: rgba(211, 211, 211, 0.521);
+}
+
+@media screen and (max-width: 1024px) {
+  #pagosbancolombia {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #tarifas {
+    padding: 0;
+  }
+  #tarifas #table {
+    padding: 0;
+  }
+  #tarifas #table :nth-child(3) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(5) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(7) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(9) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(11) {
+    background-color: lightgray;
+  }
+  #tarifas #table #tableful {
+    display: none;
+  }
+  #tarifas #tablares {
+    display: inherit;
+    font-size: 1rem;
+    padding-left: 0.7rem;
   }
 }
 
