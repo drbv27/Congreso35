@@ -37,6 +37,7 @@
         #tablares{
             display: none;
 
+
         }
 
     table{
@@ -52,14 +53,14 @@
         #th1{
             border-radius: 35px 0px 0px 0px;
         }
-        #th2{
+       
+        #th3{
             border-radius: 0px 35px 0px 0px;
+            
 
         }
-        :nth-child(3){
-            background-color: lightgray;
-        }
         
+     
         tr{
             padding-left: 3rem;
             padding-right: 3rem;
@@ -90,7 +91,15 @@
 
             
         }
+        #bancolombia{
+            font-size: 1.5rem;
+            background-color: rgba(211, 211, 211, 0.521);
+            
+        }
+        
     }
+    
+
 }
 
 @media screen and (max-width:1024px) {
@@ -120,7 +129,10 @@
 
     #tarifas{
         padding: 0;
+        
         #table{
+           padding: 0;
+           
             :nth-child(3){
                 background-color: lightgray;
             }
@@ -128,6 +140,12 @@
                 background-color: lightgray;
             }
             :nth-child(7){
+                background-color: lightgray;
+            }
+            :nth-child(9){
+                background-color: lightgray;
+            }
+            :nth-child(11){
                 background-color: lightgray;
             }
             #tableful{

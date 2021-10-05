@@ -615,11 +615,8 @@ section .contenidomot .parrafo p .has {
 #tarifas table #th1 {
   border-radius: 35px 0px 0px 0px;
 }
-#tarifas table #th2 {
+#tarifas table #th3 {
   border-radius: 0px 35px 0px 0px;
-}
-#tarifas table :nth-child(3) {
-  background-color: lightgray;
 }
 #tarifas table tr {
   padding-left: 3rem;
@@ -640,6 +637,10 @@ section .contenidomot .parrafo p .has {
   color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+#tarifas table #bancolombia {
+  font-size: 1.5rem;
+  background-color: rgba(211, 211, 211, 0.521);
 }
 
 @media screen and (max-width: 1024px) {
@@ -666,6 +667,9 @@ section .contenidomot .parrafo p .has {
   #tarifas {
     padding: 0;
   }
+  #tarifas #table {
+    padding: 0;
+  }
   #tarifas #table :nth-child(3) {
     background-color: lightgray;
   }
@@ -673,6 +677,12 @@ section .contenidomot .parrafo p .has {
     background-color: lightgray;
   }
   #tarifas #table :nth-child(7) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(9) {
+    background-color: lightgray;
+  }
+  #tarifas #table :nth-child(11) {
     background-color: lightgray;
   }
   #tarifas #table #tableful {
