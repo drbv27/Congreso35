@@ -729,7 +729,6 @@ section .contenidomot .parrafo p .has {
 #inscripcion {
   position: sticky;
   top: 5rem;
-  z-index: 1000;
 }
 #inscripcion .inscripcion {
   display: flex;
@@ -765,7 +764,7 @@ section .contenidomot .parrafo p .has {
 @media screen and (max-width: 1024px) {
   #inscripcion {
     position: sticky;
-    top: 10rem;
+    top: 12rem;
     width: 100vw;
     height: auto;
   }
